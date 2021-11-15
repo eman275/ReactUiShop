@@ -11,8 +11,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { mobile } from "../responsive";
 
+
 const Container = styled.div`
 display: flex;
+position: sticky;
+ top: 0;
 ${mobile({ flexDirection:"column" })}
 `;
 const Left= styled.div`

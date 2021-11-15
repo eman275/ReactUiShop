@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
 import Products from '../components/Products'
 import Newsletter from '../components/Newsletter'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 import { mobile } from "../responsive"
-import { mobile } from "../responsive";
+import {Link} from "react-router-dom";
+
 
  const Container=styled.div``;
  const Title = styled.h1`
@@ -37,7 +38,7 @@ const Option = styled.option``;
 const ProductList = () => {
     return (
         <Container>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Announcement/>
         <Title>Dresses</Title>
         <FilterContainer>
@@ -74,9 +75,11 @@ const ProductList = () => {
              </Select>
              </Filter>
         </FilterContainer>
+        <Link to="/Product">
         <Products/>
+        </Link>
         <Newsletter/>
-        <Footer/>
+        {/* <Footer/> */}
         </Container>
     );
 };

@@ -1,8 +1,8 @@
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
+// import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -156,7 +156,7 @@ const Button = styled.button`
 const Cart = () => {
   return (
     <Container>
-      <Navbar />
+      {/* <Navbar /> */}
       <Announcement />
       <Wrapper>
         <Title>YOUR BAG</Title>
@@ -244,7 +244,7 @@ const Cart = () => {
           </Summary>
         </Bottom>
       </Wrapper>
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 };
